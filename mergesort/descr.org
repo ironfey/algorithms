@@ -1,0 +1,17 @@
+* Merge sort
+- Given an array of integers, sort it with this algorithm.
+- Sort using a "less-than" relation.
+** Algorithm
+- Divide unsorted array of size n into n subarrays
+- Repeatedly merge subarrays to produce new sorted subarrays
+- Done if only one array left
+** Performance
+- Worst case time complexity ~O(n*log(n))~
+- Auxiliary space required is ~O(n)~
+** When to use it
+- To avoid quick sort degenerate cases (e.g. similar data)
+- To guarantee ~O(n*log(n))~
+- And cannot use heap sort because data structure does not allow random access
+- Easier to parallelize the in-place version than quicksort in-place
+- Possibly better if data is not in-memory
+- Maybe use timsort instead
